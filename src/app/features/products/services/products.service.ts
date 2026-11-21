@@ -12,7 +12,7 @@ export class ProductsService {
   }
 
   getById(id: number): Observable<Product | undefined> {
-    return this.getAll().pipe(map(list => list.find(p => p.id === id.toString())));
+    return this.getAll().pipe(map(list => list.find(p => p.id === id)));
   }
 
   filter(products: Product[], search: string, category: CategoryFilter): Product[] {
