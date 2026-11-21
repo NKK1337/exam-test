@@ -9,7 +9,7 @@ import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-product-details',
-  imports: [CurrencyPipe, TitleCasePipe, DiscountPricePipe, RouterLink],
+  imports: [CurrencyPipe, TitleCasePipe, DiscountPricePipe, RouterLink, AsyncPipe],
   templateUrl: './product-details.container.html',
   styleUrl: './product-details.container.css',
 })
